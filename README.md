@@ -19,21 +19,8 @@ git clone https://github.com/your-repository-name/action-suggester-api.git
 cd action-suggester-api
 ```
 **📊 Architecture Diagram (Simple Flow)**
-User Query
-   ↓
-/api/analyze/ (POST)
-   ↓
-→ Gemini API ← Prompted for tone & intent
-   ↓
-Tone & Intent Identified
-   ↓
-→ suggest_actions(tone, intent)
-   ↓
-Suggested Actions
-   ↓
-→ QueryLog Model (Log to DB)
-   ↓
-← JSON Response to User
+![**image_preview of Application**](https://ik.imagekit.io/vinaymry/ChatGPT%20Image%20Apr%2018,%202025,%2010_12_58%20AM.png?updatedAt=1744951837361) 
+
 
 
  
