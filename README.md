@@ -18,14 +18,22 @@ This project is a simple Django-based API that uses an external AI (LLM, such as
 git clone https://github.com/your-repository-name/action-suggester-api.git
 cd action-suggester-api
 ```
-flowchart TD
-    A[User Query] --> B[/api/analyze/ (POST)]
-    B --> C[Gemini API<br>Prompted for tone & intent]
-    C --> D[Tone & Intent Identified]
-    D --> E[suggest_actions(tone, intent)]
-    E --> F[Suggested Actions]
-    F --> G[QueryLog Model<br>Log to DB]
-    G --> H[JSON Response to User]
+**📊 Architecture Diagram (Simple Flow)**
+User Query
+   ↓
+/api/analyze/ (POST)
+   ↓
+→ Gemini API ← Prompted for tone & intent
+   ↓
+Tone & Intent Identified
+   ↓
+→ suggest_actions(tone, intent)
+   ↓
+Suggested Actions
+   ↓
+→ QueryLog Model (Log to DB)
+   ↓
+← JSON Response to User
 
 
  
