@@ -19,6 +19,7 @@ git clone https://github.com/your-repository-name/action-suggester-api.git
 cd action-suggester-api
 ```
      **Architecture of Projects **
+  graph TD
     A[User Query] --> B[/api/analyze POST]
     B --> C[Gemini API<br><i>Prompted for tone & intent</i>]
     C --> D[Tone & Intent Identified]
