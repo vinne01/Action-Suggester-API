@@ -35,7 +35,7 @@ def analyze_message(query):
         return {"tone": "Unknown", "intent": "Unknown"}
 
 
-# def suggest_actions(tone, intent):
+ def suggest_actions(tone, intent):
     actions = {
         "ORDER_FOOD": "Order Food Online",
         "FIND_RECIPE": "Find Pizza Recipes",
