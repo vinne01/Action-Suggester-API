@@ -35,25 +35,25 @@ def analyze_message(query):
         return {"tone": "Unknown", "intent": "Unknown"}
 
 
- def suggest_actions(tone, intent):
-    actions = {
-        "ORDER_FOOD": "Order Food Online",
-        "FIND_RECIPE": "Find Pizza Recipes",
-        "ASK_HELP": "Ask for Help",
-        "SHARE_NEWS": "Share Latest News"
-    }
+ # def suggest_actions(tone, intent):
+ #    actions = {
+ #        "ORDER_FOOD": "Order Food Online",
+ #        "FIND_RECIPE": "Find Pizza Recipes",
+ #        "ASK_HELP": "Ask for Help",
+ #        "SHARE_NEWS": "Share Latest News"
+ #    }
 
-    suggestions = []
-    if intent == "Order Food":
-        suggestions.append({"action_code": "ORDER_FOOD", "display_text": actions["ORDER_FOOD"]})
-    if "recipe" in tone.lower() or intent == "Find Recipe":
-        suggestions.append({"action_code": "FIND_RECIPE", "display_text": actions["FIND_RECIPE"]})
-    if tone == "Urgent":
-        suggestions.append({"action_code": "ASK_HELP", "display_text": actions["ASK_HELP"]})
-    if tone == "Happy":
-        suggestions.append({"action_code": "SHARE_NEWS", "display_text": actions["SHARE_NEWS"]})
+ #    suggestions = []
+ #    if intent == "Order Food":
+ #        suggestions.append({"action_code": "ORDER_FOOD", "display_text": actions["ORDER_FOOD"]})
+ #    if "recipe" in tone.lower() or intent == "Find Recipe":
+ #        suggestions.append({"action_code": "FIND_RECIPE", "display_text": actions["FIND_RECIPE"]})
+ #    if tone == "Urgent":
+ #        suggestions.append({"action_code": "ASK_HELP", "display_text": actions["ASK_HELP"]})
+ #    if tone == "Happy":
+ #        suggestions.append({"action_code": "SHARE_NEWS", "display_text": actions["SHARE_NEWS"]})
 
-    return suggestions[:3]
+ #    return suggestions[:3]
 
 def suggest_actions(tone, intent):
     actions = {
